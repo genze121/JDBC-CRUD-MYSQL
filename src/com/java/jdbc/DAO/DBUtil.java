@@ -6,8 +6,17 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/*
+ * Author:- Tirtha Sharma
+ * Position:- Full Stack Software Developer
+ * JDK Version:- 1.8
+ * JDBC Version:- 4.0
+ */
+
+// Taking the Connection from the Database (MYSQL)
 public class DBUtil {
 
+	// Adding the driver name of MYSQL Driver
 	private static String driver;
 	static {
 		try {
@@ -18,6 +27,7 @@ public class DBUtil {
 		}
 	}
 
+	// Giving the MYSQL url, username and Password to Communicate with the MYSQL Database and perform the following CRUD Operations
 	public static Connection getConnection() {
 
 		String JDBC_URL = "jdbc:mysql://localhost:3306/crud";
@@ -36,7 +46,8 @@ public class DBUtil {
 		}
 		return con;
 	}
-
+	
+	// After the Completion of Operations the Resources are closed successfully
 	public static void closeResources_1(PreparedStatement ps, Connection con) {
 
 		try {
