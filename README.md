@@ -6,4 +6,8 @@
 
 Credits: [Tirtha Sharma](https://github.com/genze121 "Tirtha Sharma")
 
+Twitter: [Twitter Link](https://x.com/tirthagenze121 "Tirtha Sharma")
+
+---
+
 
